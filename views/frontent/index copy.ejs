@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%-include('common/head.ejs')-%>
+    <title>Document</title>
+</head>
+<body>
+    
+    <%-include('common/header.ejs')-%>
+    
+    
+    <section>
+        <div class="container">
+            <%x.forEach((y)=>{%>
+                <%=y.pageHeading%>
+                <%-y.pageDetails.slice(0,1)%>
+                <a href="<%=y.pageUrl%>">View</a>
+            <%})%>
+        </div>
+    </section>
+
+
+
+</body>
+<%-include('common/footer.ejs')-%>
+</html>

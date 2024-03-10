@@ -1,0 +1,68 @@
+
+<%-include('common/head.ejs')-%>
+
+
+      <title>Hello, world!</title>
+   </head>
+   <body>
+    
+<%-include('common/header.ejs')-%>
+      <div class="container-fluid bg-side-nav">
+         <div class="row">
+            <div class="col-lg-2 sidebaare">
+             
+<%-include('common/sidebar.ejs')-%>
+            </div>
+            <div class="col-lg-10">
+
+              <div class="dashboard-content-area">
+               <h1 class="mb-2 mt-2">Add Page</h1>
+    
+               <form method="post" action="/admin/page/add-page/" enctype="multipart/form-data">
+           
+                 <div class="mb-3 mt-3 row g-9 align-items-center">  
+                   <div class="col col-lg-2"><label class="form-label">URL</label></div>
+                   <div class="col"><input type="text" name ="Page_Url" class="form-control" placeholder="Page Url"></div>
+                 </div>
+           
+                 <div class="mb-3 mt-3 row g-9 align-items-center">           
+                     <div class="col col-lg-2"><label class="form-label">Meta Description</label></div>
+                     <div class="col"><input type="text" name ="Page_Meta_Description" class="form-control" placeholder="Page Meta Description"></div>
+                 </div>
+           
+                 <div class="mb-3 mt-3 row g-9 align-items-center">
+                   <div class="col col-lg-2"><label class="form-label">Meta Keyword</label></div>
+                   <div class="col"><input type="text" name ="Page_Meta_Keyword" class="form-control" placeholder="Page Meta Keyword"></div>
+                 </div>
+                 
+                 <div class="mb-3 mt-3 row g-9 align-items-center">
+                   <div class="col col-lg-2"><label class="form-label">h1</label></div>
+                   <div class="col"><input type="text" name ="Page_Heading" class="form-control" placeholder="Page Heading"></div>
+                 </div>
+                 
+                 <div class="mb-3 mt-3 row g-9 align-items-center"> 
+                   <div class="col col-lg-2"><label class="form-label">Photo</label></div>
+                   <div class="col"><input type="file" name="Page_Photo" class="form-control"></div>
+                 </div>
+                 
+                 <div class="mb-3 mt-3 row g-9 align-items-center">
+                   <div class="col col-lg-2"><label class="form-label">Page Details</label></div>
+                   <div class="col"><textarea id="editor" rows="10" class="editor form-control Page_Details" name="Page_Details"   placeholder="Page Details"></textarea></div>
+                 </div>
+           
+                 <div class="mb-5 mt-3 align-items-center text-center"> 
+                      <button type="submit" class="btn btn-primary">Submit</button>
+                 </div>
+             </form>
+            
+ 
+               <!-- end your content here -->
+
+
+             </div>
+
+            </div>
+         </div>
+      </div>
+
+      <%-include('common/footer.ejs')-%>

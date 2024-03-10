@@ -1,0 +1,541 @@
+body {
+  font-family: "IBM Plex Sans", sans-serif;
+  background-color: rgba(0, 0, 0, .1);
+}
+.navbar{
+  padding: 0;
+  margin: 0;
+}
+.contain-fluid a{
+  padding: 0;
+}
+.faq h2 {
+  font-size: 2.4rem;
+  font-weight: 600;
+  text-align: center;
+  font-family: "Cinzel", serif;
+  letter-spacing: 2px;
+  line-height: 1.5;
+}
+
+details {
+  width: 75%;
+  min-height: 5px;
+  max-width: 60rem;
+  padding: 45px 70px 45px 45px;
+  margin: 0 auto;
+  position: relative;
+  font-size: 22px;
+  border: 1px solid rgba(0, 0, 0, .1);
+  border-radius: 15px;
+  box-sizing: border-box;
+  transition: all .4s;
+}
+
+details+details {
+  margin-top: 20px;
+}
+
+details[open] {
+  min-height: 50px;
+  background-color: #f6f7f8;
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, .2);
+}
+
+details p {
+  color: #96999d;
+  font-weight: 300;
+}
+
+summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+summary:focus {
+  outline: none;
+
+}
+
+summary:focus::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-shadow: 0 0 0 5px rebeccapurple;
+}
+
+summary::-webkit-details-marker {
+  display: none
+}
+
+.control-icon {
+  fill: rebeccapurple;
+  transition: .3s ease;
+  pointer-events: none;
+}
+
+.control-icon-close {
+  display: none;
+}
+
+details[open] .control-icon-close {
+  display: initial;
+  transition: .3s ease;
+}
+
+details[open] .control-icon-expand {
+  display: none;
+}
+
+
+
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+.footer-section {
+  background: #E8E4E4;
+  border-top: 2px solid rgba(0, 0, 0, 0.055);
+  position: relative;
+}
+
+.footer-cta {
+  border-bottom: 1px solid #373636;
+}
+
+.single-cta i {
+  color: #ff5e14;
+  font-size: 30px;
+  float: left;
+  margin-top: 8px;
+}
+
+.cta-text {
+  padding-left: 15px;
+  display: inline-block;
+}
+
+.cta-text h4 {
+  color: black;
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-weight: 560;
+  font-style: normal;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.cta-text span {
+  color: rgba(0, 0, 0, 0.605);
+  font-size: 15px;
+  font-family: "Fauna One", serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0.1px;
+}
+
+.footer-content {
+  position: relative;
+  z-index: 2;
+}
+
+.footer-pattern img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 330px;
+  background-size: cover;
+  background-position: 100% 100%;
+}
+
+.footer-logo {
+  margin-bottom: 10px;
+}
+
+.footer-logo img {
+  max-width: 200px;
+}
+
+.footer-text p {
+  margin-bottom: 14px;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.605);
+  line-height: 28px;
+  font-family: "Fauna One", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.8rem;
+}
+
+.footer-social-icon span {
+  color: black;
+  display: block;
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-weight: 560;
+  font-style: normal;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.footer-logo a {
+  text-decoration: none;
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-weight: 560;
+  font-style: normal;
+  font-size: 1.5rem;
+  color: black;
+}
+
+.footer-social-icon a {
+  color: #fff;
+  font-size: 16px;
+  margin-right: 15px;
+}
+
+.footer-social-icon i {
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 38px;
+  border-radius: 50%;
+}
+
+.facebook-bg {
+  background: #3B5998;
+}
+
+.twitter-bg {
+  background: #55ACEE;
+}
+
+.google-bg {
+  background: #DD4B39;
+}
+
+.footer-widget-heading h3 {
+  color: black;
+  font-size: 20px;
+  font-family: "Cinzel", serif;
+          font-optical-sizing: auto;
+          font-weight: 560;
+          font-style: normal;
+  font-weight: 600;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.footer-widget-heading h3::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  height: 2px;
+  width: 50px;
+  background: rgba(0, 0, 0, 0.605);
+}
+
+.footer-widget ul li {
+  display: inline-block;
+  float: left;
+  width: 50%;
+  margin-bottom: 12px;
+}
+
+.footer-widget ul li a:hover {
+  color: #ff5e14;
+}
+
+.footer-widget ul li a {
+  color: rgba(0, 0, 0, 0.605);
+  text-decoration: none;
+  font-family: "Fauna One", serif;
+          font-weight: 400;
+          font-style: normal; 
+  text-transform: capitalize;
+  font-size: 0.8rem;
+}
+
+.subscribe-form {
+  position: relative;
+  overflow: hidden;
+}
+
+.subscribe-form input {
+  width: 100%;
+  padding: 14px 28px;
+  background: #2E2E2E;
+  border: 1px solid #2E2E2E;
+  color: #fff;
+}
+
+.subscribe-form button {
+  position: absolute;
+  right: 0;
+  background: #ff5e14;
+  padding: 13px 20px;
+  border: 1px solid #ff5e14;
+  top: 0;
+}
+
+.subscribe-form button i {
+  color: #fff;
+  font-size: 22px;
+  transform: rotate(-6deg);
+}
+
+.copyright-area {
+  background: #202020;
+  padding: 25px 0;
+}
+
+.copyright-text p {
+  margin: 0;
+  font-family: "Fauna One", serif;
+          font-weight: 400;
+          font-style: normal; 
+  font-size: 14px;
+  color: #878787;
+}
+
+.copyright-text p a {
+  color: #ff5e14;
+}
+
+.footer-menu li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.footer-menu li:hover a {
+  color: #ff5e14;
+}
+
+.footer-menu li a {
+  font-size: 14px;
+  font-family: "Fauna One", serif;
+          font-weight: 400;
+          font-style: normal; 
+  color: #878787;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .cardd {
+    margin: 2rem !important;
+    padding: 1.5rem !important;
+  }
+  .contact-div{
+    padding: 1rem 0rem !important;
+    width: 22rem !important;
+  }
+  .card-body p{
+    font-size: 0.8rem!important;
+    opacity: 60%;
+  }
+  .about_main{
+    margin-top: 4rem !important;
+  }
+  .cta-text h4{
+    font-size: 1rem !important;
+  }
+  .cta-text p{
+    font-size: 0.6rem !important;
+  }
+  .cta-text span{
+    font-size: 0.7rem!important;
+
+  }
+  .footer-social-icon span{
+    margin-bottom: 0px !important;
+  }
+  .cta-text{
+    padding-left: 0 !important;
+    padding: 1rem 0 !important;
+  }
+  .footer-social-icon div{
+    margin: 0;
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: row !important;
+  }
+  .footer-logo a{
+    font-size: 1rem!important;
+  }
+  .footer-txt p{
+    font-size: 0.7rem !important;
+    opacity: 60%;
+  }
+  .footer-social-icon span{
+    font-size: 1rem!important;
+  }
+  .footer-widget-heading h3{
+    font-size: 0.9rem!important;
+  }
+  .footer-widget ul li a{
+    font-size: 0.8rem !important;
+    opacity: 80%;
+  }
+  .card-body h1{
+    font-size: 1rem!important;
+  }
+  .main2_txt h1{
+    font-size: 1rem!important;
+  }
+  .main2_txt p{
+    font-size: 0.7rem!important;
+    margin: 1rem!important;
+  }
+  .main2_txt button{
+    padding: 0.5rem 1rem!important;
+    margin: 1rem!important;
+    font-size: 0.81rem!important;
+  }
+  .main3{
+    padding: 2rem 0rem 1rem 0!important;
+  }
+  .main3 h1{
+    font-weight: 660!important;
+    font-size: 1rem!important;
+  }
+  .main3 p{
+    font-size: 0.8rem !important;
+    opacity: 80% !important;
+    margin: 0 2rem;
+
+  }
+  .faq{
+    padding: 0rem!important;
+    margin: 0!important;
+  }
+  .about div p{
+    padding: 0 1rem !important;
+    font-size: 0.6rem !important;
+    margin: 1rem 1rem !important;
+    opacity: 60%;
+  }
+  .faq h2{
+    font-size: 1.5rem!important;
+  }
+  .faq details{
+    width: 90%!important;
+    min-height: 5px;
+    max-width: 60rem;
+    padding: 20px 25px 20px 25px;
+  }
+  .about{
+    padding: 1rem!important;
+    margin: 2rem!important;
+    box-shadow: 4px 5px 12px 0px #00000045;
+  }
+  .carousel{
+    padding-top: 3rem;
+  }
+  .card {
+    width: auto !important;
+  }
+
+  .main4 {
+    padding: 0 !important;
+    margin: 2.5rem !important;
+    text-align: center !important;
+    display: block !important;
+    justify-content: center;
+  }
+  .main4 p br{
+    display: none;
+  }
+
+  .main4 img{
+    max-width: 80%!important;
+  }
+  .main4 p span{
+    font-size: 1rem!important;
+  }
+  .main4 p{
+    font-size: 0.7rem!important;
+    opacity: 60%;
+  }
+
+  .img img {
+    width: 100% !important;
+    height: auto!important;
+  }
+
+  summary{
+    font-size: 0.8rem;
+    font-family: "Fauna One", serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.2px;
+  }
+  details p {
+    font-size: 0.7rem;
+    font-family: "Fauna One", serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.2px;
+    padding-top: 0.5rem!important;
+  }
+  .faq{
+    padding: 2rem 0 !important;
+  }
+  .d-flex {
+    flex-direction: column !important;
+  }
+
+  .main2_txt {
+    margin: 0 !important;
+    padding: 0.5rem!important;
+  }
+
+  .main2_txt p {
+    padding: 0 !important;
+
+  }
+
+  .main4 div p {
+    margin: 0 !important;
+  }
+  .footer-section{
+    padding: 1rem !important;
+    margin: 1rem !important;
+  }
+  .carousel_img_on_desktop{
+    display: none !important;
+  }
+  .carousel_img_on_mobile{
+    display: block !important;
+    min-width: 30rem !important;
+    min-height: 60rem !important;
+  }
+  .navbar-brand{
+    font-size: 1rem !important;
+  }
+  .nav-link{
+    font-size: 0.8rem;
+  }
+}
+
+.nav-link, .dropdown-item{
+  font-size: 0.8rem;
+
+}
+.contact-form {
+  padding: 1.5rem 1rem;
+  margin: 0rem 0rem;
+}
+
+.contact-div {
+  padding: 4rem 0rem;
+}

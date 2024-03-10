@@ -1,0 +1,83 @@
+<!-- 
+<nav class="navbar">
+  <div class="container">
+
+    <ul class="navbar-nav">
+      <%naavdata.forEach((y)=>{%>
+        
+        <li class="nav-item"><a href="<%=y?y.pageUrl:''%>"><%=y?y.pageHeading:''%></a></li>
+        <%})%>
+      </ul>
+    </div>
+  </nav> -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top placeholder-glow">
+    <div class="container-fluid">
+      <a class="navbar-brand ms-2 me-4" style='font-family: "Cinzel", serif;
+          font-optical-sizing: auto;
+          font-weight: 560;
+          font-style: normal; font-size: 1.5rem;' href="/">DECORZ</a>
+      <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button> -->
+      <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-1 mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Blog</a>
+          </li>
+          
+        </ul>
+      </div> -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+        <ul class="nav justify-content-end m-1 p-1 me-2">
+          <li class="nav-item">
+            <a class="nav-link active" style='text-decoration: none; color: black; font-family: "Fauna One", serif;
+      font-weight: 400;
+      font-style: normal; letter-spacing: 0.2px;' aria-current="page" href="/">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style='text-decoration: none; color: black; font-family: "Fauna One", serif;
+      font-weight: 400;
+      font-style: normal; letter-spacing: 0.2px;' href="/blogg">BLOGS</a>
+          </li> <li class="nav-item">
+            <a class="nav-link" style='text-decoration: none; color: black; font-family: "Fauna One", serif;
+      font-weight: 400;
+      font-style: normal; letter-spacing: 0.2px;' href="/architecture">ARCHITECTURE</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" style='text-decoration: none; color: black; font-family: "Fauna One", serif;
+      font-weight: 400;
+      font-style: normal; letter-spacing: 0.2px;' href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              INTERIOR
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/interior">RESIDENTIAL</a></li>
+              <li><a class="dropdown-item" href="/custom">CUSTOM FURNITURE</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" style='text-decoration: none; color: black; font-family: "Fauna One", serif;
+      font-weight: 400;
+      font-style: normal; letter-spacing: 0.2px;' href="/about">ABOUT US</a>
+          </li> 
+          <li class="nav-item">
+            <a class="nav-link" style='text-decoration: none; color: black; font-family: "Fauna One", serif;
+      font-weight: 400;
+      font-style: normal; letter-spacing: 0.2px;' href="/contact">CONTACT</a>
+          </li>  
+           
+        </ul>
+      </div>
+
+
+    </div>
+  </nav>

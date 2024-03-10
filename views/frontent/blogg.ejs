@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+ 
+        <%-include('common/head.ejs')-%>
+        <title>Blog</title>
+    
+<body>
+    <%-include('common/header.ejs')-%>
+   
+    <%naavdata.forEach((y)=>{%>
+        <div class="col-sm-6">
+            <div class="card">
+                  <img src="/backend/images/<%=y?y.pagePhoto:''%>" alt="" class="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title"><%=y?y.pageHeading:''%></h5>
+                  <p class="card-text"><%=y?y.pageDetails:''%></p>
+                  <a class="btn btn-primary" href="<%=y?y.pageUrl:''%>">View</a>
+                </div>
+              </div>
+            </div>
+        
+        <%})%>
+    
+</body>
+
+<%-include('common/footer.ejs')-%>
+</html>

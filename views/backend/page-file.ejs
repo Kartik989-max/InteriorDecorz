@@ -1,0 +1,98 @@
+
+<%-include('common/head.ejs')-%>
+
+
+      <title>Hello, world!</title>
+   </head>
+   <body>
+    
+<%-include('common/header.ejs')-%>
+      <div class="container-fluid bg-side-nav">
+         <div class="row">
+            <div class="col-lg-2 sidebaare">
+             
+<%-include('common/sidebar.ejs')-%>
+            </div>
+            <div class="col-lg-10">
+
+              <div class="dashboard-content-area">
+
+
+
+                <h1>All Pages</h1>
+               <%if(sucess && sucess !=''){%>
+                  <div class="alert alert-success" role="alert">
+                     <%= sucess%>
+         </div>
+         <%}else if(err && err !=''){%>
+            <div class="alert alert-danger" role="alert">
+                     <%= err%>
+                     <!-- </div> -->
+            <%}%>
+
+
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                   <thead>
+                      <tr>
+                         <th>Photo</th>
+                         <th>Page Url
+
+                         </th>
+                         <th>Meta Descrip.</th>
+                         <th>Meta Keyword</th>
+                         <th>Heading</th>
+                         <th>Details</th>
+                         <th>Edit</th>
+                         <th>Delete</th>
+                      </tr>
+                   </thead>
+                   <tbody>
+
+                    <%x.forEach((y)=>{%>
+
+                    
+
+                      <tr>
+                        <td><%if(y.pagePhoto){%>
+                         <img src="/backend/images/<%=y.pagePhoto%>" width="100">
+                           <%}
+                           else{%>
+                              <img src="/backend/images/image-not-found-icon.webp" width="100">
+                           <%}%>
+                        </td>
+                         <td><%=y.pageUrl%></td>
+                         <td><%=y.pageMetaDescription%></td>
+                         <td><%=y.pageMetaKeyword%></td>
+                         <td><%=y.pageHeading%></td>
+                         <td><%=y.pageDetails.slice(0,70)%>%></td>
+<!--<td>
+                           
+                            <form style="display: inline;" action="/delete/raj k?_method=DELETE" method="POST">
+                              <button style="cursor: pointer;" type="submit" class="btn btn-info ml-2">Edit</button>
+                           </form>
+                        </td> -->
+<td><a class="btn btn-primary" href="/admin/page/edit-page/<%=y.pageUrl%>">Edit</a></td>
+<td><form style="display: inline;" action="/admin/page/delete-page/<%=y.pageUrl%>?_method=DELETE" method="POST">
+                               <button style="cursor: pointer;" type="submit" class="btn btn-danger ml-2">Delete</button>
+                            </form>
+                         </td>
+                      </tr>
+                      <%})%>
+                     
+                   </tbody>
+                </table>
+                  
+ 
+                  <center> <br> <a class="btn btn-success btn-md" href="/admin/page/add-page/">Add More Pages</a> </center>
+        
+ 
+               <!-- end your content here -->
+
+
+             </div>
+
+            </div>
+         </div>
+      </div>
+
+      <%-include('common/footer.ejs')-%>
