@@ -8,14 +8,19 @@ let methodOverride=require('method-override')
 // let pageModel = require('./model/pageModel')
 let path = require('path')
 
+mongooose.set('strictQuery',false);
 dotenv.config({path:'./config.env'})
-mongooose.connect(process.env.mognUrl)
-.then(()=>{
-    console.log("Database connection Done")
-})
-.catch(()=>{
-    console.log("Some error in database connection")
-})
+const connectDB = async()=>{
+    try{
+        const conn = await mongooose.connect(process.env.mognUrl)
+         console.log("Database connection Done")
+    }
+    catch(error){
+        console.log(error);
+        process.exit(1);
+    }
+}
+
 
 
 let app = express()
@@ -62,6 +67,9 @@ app.use('/admin/page/',pageroute)
 let headerroute = require('./route/frontent/header')
 app.use('/',headerroute)
 
-app.listen(process.env.PORT,()=> {
+connectDB().then(()=>{
+    app.listen(process.env.PORT,()=> {
     console.log(process.env.PORT, "Port Working")
-})
+    })
+});
+
