@@ -2,7 +2,7 @@
 <%-include('common/head.ejs')-%>
 
 
-      <title>Hello, world!</title>
+      <title>Add Page</title>
    </head>
    <body>
     
@@ -21,12 +21,12 @@
                <form method="post" action="/admin/page/add-page/" enctype="multipart/form-data">
            
                  <div class="mb-3 mt-3 row g-9 align-items-center">  
-                   <div class="col col-lg-2"><label class="form-label">URL</label></div>
+                   <div class="col col-lg-2"><label class="form-label">Blog Title</label></div>
                    <div class="col"><input type="text" name ="Page_Url" class="form-control" placeholder="Page Url"></div>
                  </div>
            
                  <div class="mb-3 mt-3 row g-9 align-items-center">           
-                     <div class="col col-lg-2"><label class="form-label">Meta Description</label></div>
+                     <div class="col col-lg-2"><label class="form-label">Blog Description</label></div>
                      <div class="col"><input type="text" name ="Page_Meta_Description" class="form-control" placeholder="Page Meta Description"></div>
                  </div>
            
@@ -36,7 +36,7 @@
                  </div>
                  
                  <div class="mb-3 mt-3 row g-9 align-items-center">
-                   <div class="col col-lg-2"><label class="form-label">h1</label></div>
+                   <div class="col col-lg-2"><label class="form-label">Heading</label></div>
                    <div class="col"><input type="text" name ="Page_Heading" class="form-control" placeholder="Page Heading"></div>
                  </div>
                  
@@ -46,7 +46,7 @@
                  </div>
                  
                  <div class="mb-3 mt-3 row g-9 align-items-center">
-                   <div class="col col-lg-2"><label class="form-label">Page Details</label></div>
+                   <div class="col col-lg-2"><label class="form-label">Blog Details</label></div>
                    <div class="col"><textarea id="editor" rows="10" class="editor form-control Page_Details" name="Page_Details"   placeholder="Page Details"></textarea></div>
                  </div>
            
