@@ -9,22 +9,21 @@
 <body>
     
     <%-include('common/header.ejs')-%>
-    <%if(x?x.pagePhoto:''){%>
-    <div style="width: 100%; height: 300px; overflow: hidden;">
-            <img src="/backend/images/<%=x?x.pagePhoto:''%>" alt="">
-        </div>
-        <%}%>
     <div class="container">
-        
-       
-    <h1>Helo</h1>
-    
-    <h1><%=x ? x.pageHeading: ''%></h1>
-    <%-x ? x.pageDetails: ''-%>
-</div>
+        <%if(x?x.pagePhoto:''){%>
+            <div style=" height: 40rem;display: flex;flex-direction: column; justify-content: center; ">
+                <img src="/backend/images/<%=x?x.pagePhoto:''%>" alt="">
+            </div>
+            <%}%> 
+            <div class="card text-center" style="padding:2rem 5rem;">
 
-
-
-</body>
+                <h1><%=x ? x.pageHeading: ''%></h1>
+               <p style="padding:1rem;margin: 0 1rem;"> <%-x ? x.pageDetails: ''-%></p>
+            </div>
+            
+            
+        </div>
+            
+        </body>
 <%-include('common/footer.ejs')-%>
 </html>
