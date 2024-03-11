@@ -35,10 +35,10 @@
                    <thead>
                       <tr>
                          <th>Photo</th>
-                         <th>Page Url
+                         <th>Blog Title
 
                          </th>
-                         <th>Meta Descrip.</th>
+                         <th>Blog Description</th>
                          <th>Meta Keyword</th>
                          <th>Heading</th>
                          <th>Details</th>
@@ -64,7 +64,7 @@
                          <td><%=y.pageMetaDescription%></td>
                          <td><%=y.pageMetaKeyword%></td>
                          <td><%=y.pageHeading%></td>
-                         <td><%=y.pageDetails.slice(0,70)%>%></td>
+                         <td><%-y.pageDetails.slice(0,70)-%></td>
 <!--<td>
                            
                             <form style="display: inline;" action="/delete/raj k?_method=DELETE" method="POST">
