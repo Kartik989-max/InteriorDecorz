@@ -7,20 +7,22 @@
     
 <body>
     <%-include('common/header.ejs')-%>
-   
-    <%naavdata.forEach((y)=>{%>
-        <div class="col-sm-6">
-            <div class="card">
-                  <img src="/backend/images/<%=y?y.pagePhoto:''%>" alt="" class="card-img-top">
-                <div class="card-body">
-                  <h5 class="card-title"><%=y?y.pageHeading:''%></h5>
-                  <p class="card-text"><%=y?y.pageDetails:''%></p>
-                  <a class="btn btn-primary" href="<%=y?y.pageUrl:''%>">View</a>
-                </div>
-              </div>
-            </div>
-        
-        <%})%>
+   <div class="pt-4 d-flex justify-content-center">
+
+     <%naavdata.forEach((y)=>{%>
+      <div class="col-sm-4 m-2 d-flex">
+        <div class="card m-3 p-2 ">
+          <div class="card-body m-2 ">
+            <img src="/backend/images/<%=y?y.pagePhoto:''%>" alt="" class="card-img-top">
+            <h5 class="card-title"><%=y?y.pageHeading:''%></h5>
+            <p class="card-text"><%-y?y.pageDetails.slice(0,150):''%></p>
+            <a class="btn btn-primary " href="<%=y?y.pageUrl:''%>">View</a>
+            
+          </div>
+        </div>
+      </div>
+      <%})%>
+    </div>
     
 </body>
 
