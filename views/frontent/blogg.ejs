@@ -21,10 +21,14 @@
           </div>
         </div>
       </div>
+     <% if ((index + 1) % 2 === 0) { %>
+      </div>
+      <div class="row">
+  <% } %>
       <%})%>
     </div>
-    
+  </div>
+<%-include('common/footer.ejs')-%>
 </body>
 
-<%-include('common/footer.ejs')-%>
 </html>
