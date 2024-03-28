@@ -9,6 +9,22 @@ body {
 .contain-fluid a{
   padding: 0;
 }
+.cinzelMain{
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-weight: 560;
+  font-style: bold;
+}
+.faunaText{
+  font-family: "Fauna One", serif;
+          font-weight: 400;
+          font-style: normal; letter-spacing: 0px; font-size: 1.2rem;
+}
+.faunaTextP{
+  font-family: "Fauna One", serif;
+          font-weight: 400;
+          font-style: normal; letter-spacing: 0px; font-size: 1rem;
+}
 .faq h2 {
   font-size: 2.4rem;
   font-weight: 600;
@@ -344,7 +360,7 @@ ul {
     opacity: 60%;
   }
   .about_main{
-    margin-top: 4rem !important;
+    margin-top: 3rem !important;
   }
   .cta-text h4{
     font-size: 1rem !important;
@@ -447,13 +463,17 @@ ul {
 
   .main4 {
     padding: 0 !important;
-    margin: 2.5rem !important;
+    margin: 3rem 2rem 0 2rem !important;
     text-align: center !important;
     display: block !important;
     justify-content: center;
   }
   .main4 p br{
     display: none;
+  }
+  .main4 div p{
+    text-align: center !important;
+    margin-top: 1rem !important;
   }
 
   .main4 img{
@@ -504,9 +524,6 @@ ul {
 
   }
 
-  .main4 div p {
-    margin: 0 !important;
-  }
   .footer-section{
     padding: 1rem !important;
     margin: 1rem !important;
@@ -516,8 +533,8 @@ ul {
   }
   .carousel_img_on_mobile{
     display: block !important;
-    min-width: 30rem !important;
-    min-height: 60rem !important;
+    min-width: auto !important;
+    min-height: 55rem !important;
   }
   .navbar-brand{
     font-size: 1rem !important;
