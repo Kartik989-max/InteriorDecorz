@@ -12,10 +12,10 @@
   </nav> -->
   <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top placeholder-glow">
     <div class="container-fluid">
-      <a class="navbar-brand ms-2 me-4" style='font-family: "Cinzel", serif;
+      <a class="navbar-brand ms-2 me-4" id="brand" style='font-family: "Cinzel", serif;
           font-optical-sizing: auto;
           font-weight: 560;
-          font-style: normal; font-size: 1.5rem;' href="/">DECORZ</a>
+          font-style: normal; font-size: 1.5rem; color: black;' href="/">DECORZ</a>
       <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -38,39 +38,48 @@
       <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
         <ul class="nav justify-content-end m-1 p-1 me-2">
           <li class="nav-item">
-            <a class="nav-link active" style='text-decoration: none; color: black; font-family: "Fauna One", serif;
+            <a class="nav-link active" style='text-decoration: none; font-family: "Fauna One", serif;
       font-weight: 400;
-      font-style: normal; letter-spacing: 0.2px;' aria-current="page" href="/">HOME</a>
+      font-style: normal; letter-spacing: 0.2px; transition: transform .2s; ::hover{transform: scale(1.5);}' aria-current="page" href="/">HOME</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" style='text-decoration: none; color: black; font-family: "Fauna One", serif;
+          <li class="nav-item ">
+            <a class="nav-link" style='text-decoration: none; font-family: "Fauna One", serif;
       font-weight: 400;
       font-style: normal; letter-spacing: 0.2px;' href="/blogg">BLOGS</a>
           </li> <li class="nav-item">
-            <a class="nav-link" style='text-decoration: none; color: black; font-family: "Fauna One", serif;
+            <a class="nav-link" style='text-decoration: none; font-family: "Fauna One", serif;
       font-weight: 400;
       font-style: normal; letter-spacing: 0.2px;' href="/architecture">ARCHITECTURE</a>
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" style='text-decoration: none; color: black; font-family: "Fauna One", serif;
+          <li class="nav-item dropdownInt">
+            <a href="/interior" class="nav-link dropdown-toggle" style='text-decoration: none; font-family: "Fauna One", serif;
       font-weight: 400;
-      font-style: normal; letter-spacing: 0.2px;' href="#" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
+      font-style: normal; letter-spacing: 0.2px;'>
               INTERIOR
             </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="/interior">RESIDENTIAL</a></li>
-              <li><a class="dropdown-item" href="/custom">CUSTOM FURNITURE</a></li>
+            <ul class="dropdown-menu dropdown_menu">
+              <li><a style='text-decoration: none; font-family: "Fauna One", serif;
+                font-weight: 400;
+                font-style: normal; letter-spacing: 0.2px;' class="dropdown-item" style="color: black;" href="/interior">RESIDENTIAL</a></li>
+              <li><a style='text-decoration: none; font-family: "Fauna One", serif;
+                font-weight: 400;
+                font-style: normal; letter-spacing: 0.2px;' class="dropdown-item"style="color: black;" href="/custom">CUSTOM FURNITURE</a></li>
             </ul>
+            <!-- <div class="dropdown_menu">
+              <a href="">Res</a>
+              <a href="">Res</a>
+              <a href="">Res</a>
+              <a href="">Res</a>
+            </div> -->
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" style='text-decoration: none; color: black; font-family: "Fauna One", serif;
+            <a class="nav-link" style='text-decoration: none; font-family: "Fauna One", serif;
       font-weight: 400;
       font-style: normal; letter-spacing: 0.2px;' href="/about">ABOUT US</a>
           </li> 
           <li class="nav-item">
-            <a class="nav-link" style='text-decoration: none; color: black; font-family: "Fauna One", serif;
+            <a class="nav-link" style='text-decoration: none; font-family: "Fauna One", serif;
       font-weight: 400;
       font-style: normal; letter-spacing: 0.2px;' href="/contact">CONTACT</a>
           </li>  
@@ -81,3 +90,25 @@
 
     </div>
   </nav>
+  <!-- <script>
+    document.addEventListener('scroll',()=>{
+      const header=document.querySelector('nav');
+      const navLinks=document.querySelectorAll('nav .nav-link');
+      const brand = document.getElementById('brand');
+
+      if(window.scrollY>100){
+        header.classList.add('scrolled');
+        navLinks.forEach(link => {
+          link.classList.add('scrolled');
+        });
+        brand.classList.add('scrolled');
+      }
+      else{
+        header.classList.remove('scrolled');
+        brand.classList.remove('scrolled');
+        navLinks.forEach(link => {
+        link.classList.remove('scrolled');
+      });
+      }
+    })
+  </script> -->
