@@ -17,6 +17,10 @@ router.get('/interior', (req, res) => {
     // Assuming you have a separate view file for the contact page
     res.render('../views/frontent/interior');
 });
+router.get('/residential', (req, res) => {
+    // Assuming you have a separate view file for the contact page
+    res.render('../views/frontent/residential');
+});
 router.get('/architecture', (req, res) => {
     // Assuming you have a separate view file for the contact page
     res.render('../views/frontent/architecture');
