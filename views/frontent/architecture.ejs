@@ -4,46 +4,91 @@
   <head>
     <%-include('common/head.ejs')-%>
     <title>Architecture</title>
-    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
   
-  <body>
+  <body style="overflow-x: hidden;">
     <%-include('common/header.ejs')-%>
-    <div class="main3 p-3 m-3" id="main3" style="background-color: #E8E4E4; margin-top: 4rem!important;">
-      
-      <h1 class="text-center" style='font-family: "Cinzel", serif;
-  font-optical-sizing: auto;
-  font-weight: 560;
-  font-style: bold;'>ARCHITECTURE</h1>
-    <p class="text-center faunaTextP" >We know you are unique, and we make sure your home is
-      too!</p>
-      <img class="img-fluid position-sticky" src="frontent/images/architecture_main.jpg" alt="">
-   
-      <div class=" d-flex justify-content-center">
+
+
+    <div class="img_container top_img">
+      <img
+        src="frontent/images/architecture_main.jpg"
+        alt="" style="filter: brightness(50%);"
+      />
+      <!-- <div class="main-section" style="padding: 0">
+        <h1 style="font-size: 80px">Hello This is Demo</h1>
+      </div> -->
+    </div>
+    <section class="main-section">
+      <div class="content_wrapper">
         
-      <div class="card m-3" style="width: 30rem;">
-        <img src="frontent/images/residential_architecture.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h1 class="card-text faunaText" >Residential</h1>
-          <p class="card-text faunaTextP">Architectural excellence runs in our DNA. Get
-            customised architectural designs for your homes,offices, penthouses or hotels. Bespoke and luxurious.</p>
+        <h1 class="cinzelMain" style="color: rgba(245, 222, 179, 0.716); font-size: 2rem;">CUSTOMIZED AND CHIC
+          ARCHITECTURE</h1>
+        
+        <p class="faunaTextP">
+          Aesthetics is entirely dependent on the architecture at work and no one but the best architect can bring your visions to life. Alive Studio is the brand for the job, as it has been for so many years, where our creative experts resonate with your ideas and paint a picturesque architecture in sync with modern trends. We customize as per your needs. We customize as per your space. Alive studio infuses creativity to every tissue of your intended architecture. <br>
+
+The process we follow to build your architecture is intricate. We first understand your vision. We then draw out a blueprint. Our team constantly communicates with you to perfect the design and exactly copies the plan into the real space. Throughout, Alive Studio prioritizes customer satisfaction and on-time completion. We respect the art in architecture and deliver what we promise. For the best customized and chic architecture, get in touch with us. Quality and beauty await you.
+        </p>
+        <!-- <div class="img_container anime_img" style="margin: 25px 0">
+          <img
+            src="https://images.unsplash.com/photo-1682687982360-3fbab65f9d50?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt=""
+          />
+        </div> -->
+      
+        
         </div>
       </div>
+    </section>
+
+
+
+
+    <div>
+    <div class="main3_text" style="position:absolute !important;
+    font-optical-sizing: auto;
+    top: 50%;
+    left: 20%;
+    color: white;">
+
+<h1 class="text-center">ARCHITECTURE</h1>
+    <p class="text-center faunaTextP" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam ab mollitia dolores hic ipsam. Eveniet nostrum illum in aliquid accusamus harum placeat dolorum eius corrupti.</p>
+    </div>
+   
+    <h1 class="cinzelMain mt-2 pb-2" style="color: wheat; text-align: center;">Our Services</h1>
+      <div class=" d-flex justify-content-center" data-aos="fade-up ">
       <div class="card m-3" style="width: 30rem;">
+        <a href="./architecture">
+          
+          <img  src="frontent/images/residential_architecture.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h1 class="card-text faunaText" >Residential</h1>
+            <p class="card-text faunaTextP">Architectural excellence runs in our DNA. Get
+              customised architectural designs for your homes,offices, penthouses or hotels. Bespoke and luxurious.</p>
+            </div>
+          </a>
+      </div>
+      <div class="card m-3" style="width: 30rem;"><a href="./architecture">
+
         <img src="frontent/images/commercial_architecture.jpg" class="card-img-top" alt="...">
         <div class="card-body">
           <h1  class="card-text faunaText">Commercial</h1>
           <p  class="card-text faunaTextP">Architectural excellence runs in
             our DNA. Get customised architectural designs.</p>
-        </div>
+          </div>
+        </a>
       </div>
       <div class="card m-3" style="width: 30rem;">
-        <img src="frontent/images/hostipality_architecture.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h1  class="card-text faunaText">Hospitality</h1>
-          <p  class="card-text faunaTextP">Architectural excellence runs in
-            our DNA. Get customised architectural designs.</p>
-        </div>
+        <a href="./architecture">
+          <img src="frontent/images/hostipality_architecture.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h1  class="card-text faunaText">Hospitality</h1>
+            <p  class="card-text faunaTextP">Architectural excellence runs in
+              our DNA. Get customised architectural designs.</p>
+            </div>
+          </a>
       </div>
     </div>
   </div>
@@ -62,3 +107,10 @@
 </body>
 <%-include('common/footer.ejs')-%>
 </html>
+<!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    offset:200,
+    duration:1000
+  });
+</script> -->
