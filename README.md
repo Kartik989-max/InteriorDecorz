@@ -1,3 +1,5 @@
+![Screenshot 2024-10-13 015722](https://github.com/user-attachments/assets/29bfc6a1-54e9-4a12-b39b-0bbf35cc5f04)
+
 # Decorz Website
 Demo Link: https://interior2.onrender.com
 
